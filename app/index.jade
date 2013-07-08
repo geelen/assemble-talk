@@ -2,7 +2,7 @@ extends layout
 
 block content
   article.bespoke-parent
-    section(data-bespoke-state='title')
+    section(data-bespoke-state='japan')
       .content
         .byline
           .classy This talk is called:
@@ -17,71 +17,41 @@ block content
           a(href='https://twitter.com/glenmaddern') @glenmaddern
           a(href='http://github.com/geelen') geelen
 
-    section(data-bespoke-state='confession')
+    section(data-bespoke-state='underconstruction')
       .content
         .byline
-          .classy Firstly:
-        h1 A confession
+          .classy Full disclosure:
+        h2 Assemble
+        .byline
+          .classy is still a
+        h2
+          strong work in progress
         .unbrokenline
 
-    section(data-bespoke-state='confession')
-      .content
-        .unbrokenline
-        h1 I am not really a Javascript developer
-        .unbrokenline
-
-    section(data-bespoke-state='goodfilms')
+    section(data-bespoke-state='underconstruction')
       .content
         .byline
-          .classy When I built
-        h1
-          strong Goodfilms
+          .classy Which is to say
+        h1 it is
+          strong  usable
+        .byline
+          .classy but
+        h1 not
+          strong  easy to use
         .unbrokenline
-
-    section(data-bespoke-state='coffee')
-      .content
-        .byline
-          .classy I used
-        h1
-          strong Coffeescript
-        .byline
-          .classy and still do.
-
-    section(data-bespoke-state='programming')
-
-    section(data-bespoke-state='code')
-      .content
-        h1 When did I start using it?
-        pre(style='display: inline-block;')
-          code.rainbow(data-language='javascript')
-            span.string "use strict"
-            | ;
 
     section(data-bespoke-state='yeoman')
       .content
+        .byline
+          .classy But first
+        h1 let's talk about
+          strong  Yeoman
         .unbrokenline
-        h1
-          strong Yeoman
-          |  generated it for me.
-        .byline
-          .classy of course!
 
-    section(data-bespoke-state='')
-      .content
-        h2 This talk is now:
-        .byline
-          .classy Things
-        h2 Glen
-          strong  didn't know
-          |  about Javascript
-        .byline
-          .classy that are
-        h2
-          strong  mildly interesting
-        .byline
-          .classy and relate to
-        h2
-          strong strict mode
+    section(data-bespoke-state='code')
+      .iframe-holster
+        h4 http://yeoman.io
+        iframe(src='http://yeoman.io/')
 
     section(data-bespoke-state='')
       .content

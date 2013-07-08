@@ -16,12 +16,12 @@ article
     +filter(grayscale(0.3) brightness(0.4 * $brightnessFactor))
   &::before
     z-index: 1
-    width: 25%
-    height: 25%
+    width: 40%
+    height: 40%
     top: 0%
     left: 0%
     +transform-origin(top, left)
-    +transform(scale(4))
+    +transform(scale(2.5))
   &::after
     z-index: 1
     top: 0
@@ -30,18 +30,13 @@ article
     height: 100%
 
   // use ::before for gifs (small size, scaled up)
-  &.title::before
+  &.copter::before
     background-image: url(http://i.imgur.com/vnkglbw.gif)
-  // &.chuck::before
-    // background-image: url('http://holykkphils.files.wordpress.com/2011/06/chuck-norris-approved.gif')
-  // &.approve::before
-    // background-image: url('http://boards.420chan.org/pol/src/1366522404633.gif')
-  &.goodfilms::before
-    +filter(grayscale(0.3) brightness(0.4 * $brightnessFactor))
-    background-image: url('http://24.media.tumblr.com/tumblr_lgb02mCfLm1qe0eclo1_r5_500.gif')
-  &.coffee::before
-    +filter(grayscale(0.3) brightness(0.4 * $brightnessFactor))
-    background-image: url('http://24.media.tumblr.com/tumblr_lzvxa27m6M1r2gn3bo1_400.gif')
+  &.japan::before
+    +filter(brightness(0.8 * $brightnessFactor))
+    background-image: url(http://i.imgur.com/eET8MpF.gif)
+  &.underconstruction::before
+    background-image: url(http://www.lfed-mw.com/animations/under_construction_animated.gif)
   &.tldr::before
     +filter(grayscale(0.5) brightness(0.2 * $brightnessFactor))
     background-image: url('http://i0.kym-cdn.com/photos/images/newsfeed/000/154/912/berneydidnotread.gif?1318992465')
@@ -60,10 +55,6 @@ article
   // use ::after for images (full size, cover)
   &.confession::after
     background-image: url('http://i1.kym-cdn.com/photos/images/original/000/336/370/361.jpg')
-  &.ruby::after
-    background-image: url('../images/ruby-australia-logo.png')
-  &.love::after
-    background-image: url('../images/love_coloring.jpg')
   &.yeoman::after
     +filter(grayscale(0.6) contrast(0.9) brightness(0.3 * $brightnessFactor))
     background-image: url('http://yeoman.io/assets/img/yeoman-005.png')

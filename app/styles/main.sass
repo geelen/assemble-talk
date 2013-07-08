@@ -140,10 +140,26 @@ section
     margin: 10px auto
     width: 100px
     height: 100px
-    +border-radius(60px)
-    background-image: url('../images/me_720.jpg')
-    background-size: 140px
-    background-position: -18px -30px
+    +border-radius(50%)
+    background-image: url('../images/me_headshot.jpg')
+    background-size: 100%
+    background-position: 0 0
+
+  .iframe-holster
+    margin: 24px 48px 48px
+    position: relative
+    width: calc(100% - 96px)
+    height: calc(100% - 72px)
+
+  iframe
+    display: block
+    position: absolute
+    border: none
+    height: calc(100% - 48px)
+    width: 100%
+    bottom: 0
+    left: 0
+    box-shadow: 0 0 0px 8px white, 0 0 0px 9px rgba(black, 0.1), 10px 10px 20px 3px rgba(black, 0.2), -10px 10px 20px 3px rgba(black, 0.2)
 
 pre, code
   font-family: source-code-pro, 'Monaco', courier, monospace
