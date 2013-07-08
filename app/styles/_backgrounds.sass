@@ -10,19 +10,18 @@ article
     display: block
     position: absolute
     background-size: cover
-    background-position: center center
+    background-position: 50% 100%
     background-repeat: no-repeat
     content: ''
-    +filter(grayscale(0.3) brightness(0.3 * $brightnessFactor))
+    +filter(grayscale(0.3) brightness(0.4 * $brightnessFactor))
   &::before
     z-index: 1
-    width: 20%
-    height: 20%
-    top: 50%
-    left: 50%
-    margin-top: -5%
-    margin-left: -10%
-    +transform(scale(5.5))
+    width: 25%
+    height: 25%
+    top: 0%
+    left: 0%
+    +transform-origin(top, left)
+    +transform(scale(4))
   &::after
     z-index: 1
     top: 0
@@ -31,10 +30,8 @@ article
     height: 100%
 
   // use ::before for gifs (small size, scaled up)
-  &.waves::before
-    +transform(scale(6.5))
-    +filter(blur(1px) grayscale(0.3) brightness(0.4 * $brightnessFactor))
-    background-image: url('http://stream1.gifsoup.com/view/609536/beach-waves-o.gif')
+  &.title::before
+    background-image: url(http://i.imgur.com/vnkglbw.gif)
   // &.chuck::before
     // background-image: url('http://holykkphils.files.wordpress.com/2011/06/chuck-norris-approved.gif')
   // &.approve::before

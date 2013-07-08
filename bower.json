@@ -1,5 +1,5 @@
 {
-  "name": "webDirectionsTalk",
+  "name": "assembleTalk",
   "version": "0.0.0",
   "dependencies": {
     "bespoke.js": "~0.1.1",
