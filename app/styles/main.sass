@@ -75,6 +75,7 @@ body
 section
   color: $font-color
   text-align: center
+  +perspective(1000px)
 
   .content
     padding: 1em
@@ -150,6 +151,12 @@ section
     position: relative
     width: calc(100% - 96px)
     height: calc(100% - 72px)
+    +transform(none)
+    +transform(translateZ(0px) rotateY(4deg))
+    +transition(transform 0.6s)
+
+  &.bespoke-inactive .iframe-holster
+    +transform(translateZ(-200px) rotateY(10deg))
 
   iframe
     display: block
@@ -160,6 +167,7 @@ section
     bottom: 0
     left: 0
     box-shadow: 0 0 0px 8px white, 0 0 0px 9px rgba(black, 0.1), 10px 10px 20px 3px rgba(black, 0.2), -10px 10px 20px 3px rgba(black, 0.2)
+
 
 pre, code
   font-family: source-code-pro, 'Monaco', courier, monospace
