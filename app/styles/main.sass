@@ -149,13 +149,17 @@ section
   .iframe-holster, &.bespoke-inactive .iframe-holster.no-animation
     margin: 24px 48px 48px
     position: relative
-    width: calc(66% - 96px)
-    height: calc(66% - 72px)
-    +transform(translateZ(0px) scale(1.5) rotateY(4deg))
+    width: calc(90% - 96px)
+    height: calc(90% - 72px)
+    +transform(translateZ(0px) scale(1) rotateY(4deg))
     +transition(transform 0.6s)
+    &.zoomed
+      width: calc(66% - 96px)
+      height: calc(66% - 72px)
+      +transform(translateZ(0px) scale(1.5) rotateY(4deg))
 
   &.bespoke-inactive .iframe-holster
-    +transform(translateZ(-200px) scale(1.5) rotateY(10deg))
+    +transform(translateZ(-200px) scale(1) rotateY(10deg))
 
   iframe
     background-color: white

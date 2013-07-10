@@ -26,22 +26,22 @@ block content
         .unbrokenline
 
     section(data-bespoke-state='iframe')
-      .iframe-holster
+      .iframe-holster.zoomed
         h4 Angular rulez
         iframe(src="http://www.google.com/trends/fetchComponent?hl=en-US&q=angularjs,+emberjs&date=1/2012+18m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=600")
 
     section(data-bespoke-state='iframe')
-      .iframe-holster.no-animation
+      .iframe-holster.no-animation.zoomed
         h4 Ok...
         iframe(src="http://www.google.com/trends/fetchComponent?hl=en-US&q=angularjs,+emberjs,+jquery&date=1/2012+18m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=600")
 
     section(data-bespoke-state='iframe')
-      .iframe-holster.no-animation
+      .iframe-holster.no-animation.zoomed
         h4 ...maybe popularity...
         iframe(src="http://www.google.com/trends/fetchComponent?hl=en-US&q=angularjs,+emberjs,+jquery,+php&date=1/2012+18m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=600")
 
     section(data-bespoke-state='iframe')
-      .iframe-holster.no-animation
+      .iframe-holster.no-animation.zoomed
         h4 ...isn't everything.
         iframe(src="http://www.google.com/trends/fetchComponent?hl=en-US&q=angularjs,+emberjs,+jquery,+php,+justin+bieber&date=1/2012+18m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=600")
 
@@ -136,6 +136,30 @@ block content
           .classy &
         h2 No server-side templates/partials
         .unbrokenline
+
+    section(data-bespoke-state='')
+      .content
+        .byline
+          .classy Thankfully,
+        h2
+          strong Assemble
+          |  fixes those last two
+        .unbrokenline
+
+    section(data-bespoke-state='iframe')
+      .iframe-holster
+        h4 http://assemble.io
+        iframe(src='http://assemble.io/')
+
+    section(data-bespoke-state='iframe')
+      .iframe-holster
+        h4 http://assemble.io/docs
+        iframe(src='http://assemble.io/docs')
+
+    section(data-bespoke-state='iframe')
+      .iframe-holster
+        h4 http://assemble.io/docs
+        iframe(src='http://localhost:5000/geelen/assemble-talk/blob/master/examples/webapp/Gruntfile.js#L194')
 
     section(data-bespoke-state='code')
       .content
