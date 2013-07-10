@@ -11,29 +11,32 @@ article::before, article::after {
   display: block;
   position: absolute;
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
   content: "";
-  -webkit-filter: grayscale(0.3) brightness(0.3);
-  -moz-filter: grayscale(0.3) brightness(0.3);
-  filter: grayscale(0.3) brightness(0.3);
+  -webkit-filter: grayscale(0.3) brightness(0.4);
+  -moz-filter: grayscale(0.3) brightness(0.4);
+  filter: grayscale(0.3) brightness(0.4);
 }
 /* line 17, ../../app/styles/_backgrounds.sass */
 article::before {
   z-index: 1;
-  width: 20%;
-  height: 20%;
-  top: 50%;
-  left: 50%;
-  margin-top: -5%;
-  margin-left: -10%;
-  -webkit-transform: scale(5.5);
-  -moz-transform: scale(5.5);
-  -ms-transform: scale(5.5);
-  -o-transform: scale(5.5);
-  transform: scale(5.5);
+  width: 40%;
+  height: 40%;
+  top: 0%;
+  left: 0%;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -o-transform: scale(2.5);
+  transform: scale(2.5);
 }
-/* line 26, ../../app/styles/_backgrounds.sass */
+/* line 25, ../../app/styles/_backgrounds.sass */
 article::after {
   z-index: 1;
   top: 0;
@@ -41,107 +44,59 @@ article::after {
   width: 100%;
   height: 100%;
 }
-/* line 34, ../../app/styles/_backgrounds.sass */
-article.waves::before {
-  -webkit-transform: scale(6.5);
-  -moz-transform: scale(6.5);
-  -ms-transform: scale(6.5);
-  -o-transform: scale(6.5);
-  transform: scale(6.5);
-  -webkit-filter: blur(1px) grayscale(0.3) brightness(0.4);
-  -moz-filter: blur(1px) grayscale(0.3) brightness(0.4);
-  filter: blur(1px) grayscale(0.3) brightness(0.4);
-  background-image: url("http://stream1.gifsoup.com/view/609536/beach-waves-o.gif");
+/* line 33, ../../app/styles/_backgrounds.sass */
+article.copter::before {
+  background-image: url(http://i.imgur.com/vnkglbw.gif);
 }
-/* line 42, ../../app/styles/_backgrounds.sass */
-article.goodfilms::before {
-  -webkit-filter: grayscale(0.3) brightness(0.4);
-  -moz-filter: grayscale(0.3) brightness(0.4);
-  filter: grayscale(0.3) brightness(0.4);
-  background-image: url("http://24.media.tumblr.com/tumblr_lgb02mCfLm1qe0eclo1_r5_500.gif");
+/* line 35, ../../app/styles/_backgrounds.sass */
+article.japan::before {
+  -webkit-filter: brightness(0.8);
+  -moz-filter: brightness(0.8);
+  filter: brightness(0.8);
+  background-image: url(http://i.imgur.com/eET8MpF.gif);
 }
-/* line 45, ../../app/styles/_backgrounds.sass */
-article.coffee::before {
-  -webkit-filter: grayscale(0.3) brightness(0.4);
-  -moz-filter: grayscale(0.3) brightness(0.4);
-  filter: grayscale(0.3) brightness(0.4);
-  background-image: url("http://24.media.tumblr.com/tumblr_lzvxa27m6M1r2gn3bo1_400.gif");
+/* line 38, ../../app/styles/_backgrounds.sass */
+article.underconstruction::before {
+  background-image: url(http://www.lfed-mw.com/animations/under_construction_animated.gif);
 }
-/* line 48, ../../app/styles/_backgrounds.sass */
-article.tldr::before {
-  -webkit-filter: grayscale(0.5) brightness(0.2);
-  -moz-filter: grayscale(0.5) brightness(0.2);
-  filter: grayscale(0.5) brightness(0.2);
-  background-image: url("http://i0.kym-cdn.com/photos/images/newsfeed/000/154/912/berneydidnotread.gif?1318992465");
-}
-/* line 51, ../../app/styles/_backgrounds.sass */
-article.yolo::before {
-  -webkit-filter: grayscale(0.5) brightness(0.8);
-  -moz-filter: grayscale(0.5) brightness(0.8);
-  filter: grayscale(0.5) brightness(0.8);
-  background-image: url("http://24.media.tumblr.com/tumblr_m30nd7SIk41r34vqgo1_1280.gif");
-}
-/* line 54, ../../app/styles/_backgrounds.sass */
+/* line 40, ../../app/styles/_backgrounds.sass */
 article.success::before {
   -webkit-filter: grayscale(0.5) brightness(0.4);
   -moz-filter: grayscale(0.5) brightness(0.4);
   filter: grayscale(0.5) brightness(0.4);
   background-image: url("http://www.thedisabledcubicle.com/wp-content/uploads/2012/11/apollorockygif1.gif");
 }
-/* line 57, ../../app/styles/_backgrounds.sass */
-article.no::before {
-  background-image: url("http://stream1.gifsoup.com/view5/4253079/no-god-o.gif");
+/* line 43, ../../app/styles/_backgrounds.sass */
+article.trolling::before {
+  width: 20%;
+  height: 20%;
+  -webkit-transform: scale(5.5);
+  -moz-transform: scale(5.5);
+  -ms-transform: scale(5.5);
+  -o-transform: scale(5.5);
+  transform: scale(5.5);
+  -webkit-filter: blur(1px) grayscale(0.5) brightness(0.3);
+  -moz-filter: blur(1px) grayscale(0.5) brightness(0.3);
+  filter: blur(1px) grayscale(0.5) brightness(0.3);
+  background-image: url("http://images.wikia.com/nickfanon/images/f/f3/Troll_cat_gif_(1).gif");
 }
-/* line 59, ../../app/styles/_backgrounds.sass */
-article.serious::before {
-  -webkit-filter: grayscale(0.5) brightness(0.4);
-  -moz-filter: grayscale(0.5) brightness(0.4);
-  filter: grayscale(0.5) brightness(0.4);
-  background-image: url("http://24.media.tumblr.com/tumblr_lhhjisnv1x1qe0eclo1_r10_500.gif");
-}
-/* line 64, ../../app/styles/_backgrounds.sass */
-article.confession::after {
-  background-image: url("http://i1.kym-cdn.com/photos/images/original/000/336/370/361.jpg");
-}
-/* line 66, ../../app/styles/_backgrounds.sass */
-article.ruby::after {
-  background-image: url("../images/ruby-australia-logo.png");
-}
-/* line 68, ../../app/styles/_backgrounds.sass */
-article.love::after {
-  background-image: url("../images/love_coloring.jpg");
-}
-/* line 70, ../../app/styles/_backgrounds.sass */
+/* line 51, ../../app/styles/_backgrounds.sass */
 article.yeoman::after {
   -webkit-filter: grayscale(0.6) contrast(0.9) brightness(0.3);
   -moz-filter: grayscale(0.6) contrast(0.9) brightness(0.3);
   filter: grayscale(0.6) contrast(0.9) brightness(0.3);
   background-image: url("http://yeoman.io/assets/img/yeoman-005.png");
+  background-position: 50% 40%;
 }
-/* line 73, ../../app/styles/_backgrounds.sass */
-article.programming::after {
-  -webkit-filter: none;
-  -moz-filter: none;
-  filter: none;
-  background-size: contain;
-  background-image: url("http://imgon.net/di-JMPP.gif");
-}
-/* line 77, ../../app/styles/_backgrounds.sass */
-article.dangerous::after {
-  -webkit-filter: contrast(0.4) brightness(0.25);
-  -moz-filter: contrast(0.4) brightness(0.25);
-  filter: contrast(0.4) brightness(0.25);
-  background-image: url("http://24.media.tumblr.com/tumblr_m8bjqexyfX1rb85xmo1_500.gif");
-}
-/* line 82, ../../app/styles/_backgrounds.sass */
-article.code {
+/* line 57, ../../app/styles/_backgrounds.sass */
+article.code, article.iframe {
   background-color: #fbeecb;
 }
-/* line 84, ../../app/styles/_backgrounds.sass */
-article.code section {
+/* line 59, ../../app/styles/_backgrounds.sass */
+article.code section, article.iframe section {
   color: black;
 }
-/* line 86, ../../app/styles/_backgrounds.sass */
+/* line 61, ../../app/styles/_backgrounds.sass */
 article.programming {
   background-color: white;
   opacity: 0.95;
@@ -165,7 +120,7 @@ html .content {
   transition: opacity 1s;
 }
 /* line 19, ../../app/styles/main.sass */
-html.wf-loading .content {
+html.wf-loading .content, html.wf-loading .iframe-holster {
   opacity: 0;
   -webkit-transition: none;
   -moz-transition: none;
@@ -342,46 +297,51 @@ body {
 section {
   color: #f2f2f2;
   text-align: center;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
 }
-/* line 79, ../../app/styles/main.sass */
+/* line 80, ../../app/styles/main.sass */
 section .content {
   padding: 1em;
   word-break: break-word;
 }
-/* line 83, ../../app/styles/main.sass */
+/* line 84, ../../app/styles/main.sass */
 section h1 {
   font-size: 3em;
   font-weight: 300;
   margin: 0;
 }
-/* line 88, ../../app/styles/main.sass */
+/* line 89, ../../app/styles/main.sass */
 section h2 {
   font-size: 3em;
   font-weight: 300;
   margin: 0;
 }
-/* line 93, ../../app/styles/main.sass */
+/* line 94, ../../app/styles/main.sass */
 section h3 {
   font-size: 2.5em;
   font-weight: 400;
   margin: 0;
 }
-/* line 98, ../../app/styles/main.sass */
+/* line 99, ../../app/styles/main.sass */
 section h4 {
   margin: 0;
   font-size: 1.5em;
   font-weight: 400;
 }
-/* line 103, ../../app/styles/main.sass */
+/* line 104, ../../app/styles/main.sass */
 section .underline {
   border-bottom: 0.1em solid white;
 }
-/* line 106, ../../app/styles/main.sass */
+/* line 107, ../../app/styles/main.sass */
 section .strikethrough {
   text-decoration: line-through;
   color: #999999;
 }
-/* line 110, ../../app/styles/main.sass */
+/* line 111, ../../app/styles/main.sass */
 section .byline, section .row {
   margin: 20px 0;
   display: -webkit-box;
@@ -393,12 +353,12 @@ section .byline, section .row {
   -ms-box-align: center;
   box-align: center;
 }
-/* line 114, ../../app/styles/main.sass */
+/* line 115, ../../app/styles/main.sass */
 section .byline {
   font-size: 1em;
   color: #a6a6a6;
 }
-/* line 117, ../../app/styles/main.sass */
+/* line 118, ../../app/styles/main.sass */
 section .byline::before, section .byline::after {
   content: "";
   display: block;
@@ -410,42 +370,88 @@ section .byline::before, section .byline::after {
   padding-top: 1px;
   border-bottom: 1px dotted #595959;
 }
-/* line 124, ../../app/styles/main.sass */
+/* line 125, ../../app/styles/main.sass */
 section .byline > * {
   margin-right: 20px;
 }
-/* line 126, ../../app/styles/main.sass */
+/* line 127, ../../app/styles/main.sass */
 section .byline > *:first-child {
   margin-left: 20px;
 }
-/* line 129, ../../app/styles/main.sass */
+/* line 130, ../../app/styles/main.sass */
 section .unbrokenline {
   border-bottom: 1px dotted #595959;
   margin: 30px 0 30px;
 }
-/* line 133, ../../app/styles/main.sass */
+/* line 134, ../../app/styles/main.sass */
 section .classy {
   font-size: 1.2em;
   font-family: kepler-std, Georgia, serif;
   font-weight: 300;
   font-style: italic;
 }
-/* line 139, ../../app/styles/main.sass */
+/* line 140, ../../app/styles/main.sass */
 section .me {
   margin: 10px auto;
-  width: 80px;
-  height: 80px;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  -ms-border-radius: 60px;
-  -o-border-radius: 60px;
-  border-radius: 60px;
-  background-image: url("../images/me_720.png");
-  background-size: 120px;
-  background-position: -20px -30px;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-image: url("../images/me_headshot.jpg");
+  background-size: 100%;
+  background-position: 0 0;
+}
+/* line 149, ../../app/styles/main.sass */
+section .iframe-holster, section.bespoke-inactive .iframe-holster.no-animation {
+  margin: 24px 48px 48px;
+  position: relative;
+  width: calc(90% - 96px);
+  height: calc(90% - 72px);
+  -webkit-transform: translateZ(0px) scale(1) rotateY(4deg);
+  -moz-transform: translateZ(0px) scale(1) rotateY(4deg);
+  -ms-transform: translateZ(0px) scale(1) rotateY(4deg);
+  -o-transform: translateZ(0px) scale(1) rotateY(4deg);
+  transform: translateZ(0px) scale(1) rotateY(4deg);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+}
+/* line 156, ../../app/styles/main.sass */
+section .iframe-holster.zoomed, section.bespoke-inactive .iframe-holster.no-animation.zoomed {
+  width: calc(66% - 96px);
+  height: calc(66% - 72px);
+  -webkit-transform: translateZ(0px) scale(1.5) rotateY(4deg);
+  -moz-transform: translateZ(0px) scale(1.5) rotateY(4deg);
+  -ms-transform: translateZ(0px) scale(1.5) rotateY(4deg);
+  -o-transform: translateZ(0px) scale(1.5) rotateY(4deg);
+  transform: translateZ(0px) scale(1.5) rotateY(4deg);
+}
+/* line 161, ../../app/styles/main.sass */
+section.bespoke-inactive .iframe-holster {
+  -webkit-transform: translateZ(-200px) scale(1) rotateY(10deg);
+  -moz-transform: translateZ(-200px) scale(1) rotateY(10deg);
+  -ms-transform: translateZ(-200px) scale(1) rotateY(10deg);
+  -o-transform: translateZ(-200px) scale(1) rotateY(10deg);
+  transform: translateZ(-200px) scale(1) rotateY(10deg);
+}
+/* line 164, ../../app/styles/main.sass */
+section iframe {
+  background-color: white;
+  display: block;
+  position: absolute;
+  border: none;
+  height: calc(100% - 48px);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 0px 8px white, 0 0 0px 9px rgba(0, 0, 0, 0.1), 10px 10px 20px 3px rgba(0, 0, 0, 0.2), -10px 10px 20px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 148, ../../app/styles/main.sass */
+/* line 176, ../../app/styles/main.sass */
 pre, code {
   font-family: source-code-pro, "Monaco", courier, monospace;
   font-size: 1.2em;
@@ -453,18 +459,39 @@ pre, code {
   text-align: left;
 }
 
-/* line 154, ../../app/styles/main.sass */
+/* line 182, ../../app/styles/main.sass */
 pre {
   position: relative;
   box-shadow: 0 0 1px 0 black, 0 0 0px 8px white, 0 0 0px 9px rgba(0, 0, 0, 0.1), 10px 10px 20px 3px rgba(0, 0, 0, 0.2), -10px 10px 20px 3px rgba(0, 0, 0, 0.2);
   margin: 30px;
 }
 
-/* line 159, ../../app/styles/main.sass */
+/* line 187, ../../app/styles/main.sass */
 .bespoke-bullet {
   display: none;
 }
-/* line 161, ../../app/styles/main.sass */
+/* line 189, ../../app/styles/main.sass */
 .bespoke-bullet.bespoke-bullet-last-active {
   display: block;
+}
+
+/* line 192, ../../app/styles/main.sass */
+.strike {
+  text-decoration: line-through;
+}
+
+/* line 195, ../../app/styles/main.sass */
+div[id^="gist"] {
+  margin-top: 30px;
+  max-height: 600px;
+  overflow: scroll;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.2), -10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+/* line 200, ../../app/styles/main.sass */
+div[id^="gist"] .gist-file {
+  margin-bottom: 0;
+}
+/* line 202, ../../app/styles/main.sass */
+div[id^="gist"] .gist-meta {
+  display: none;
 }
