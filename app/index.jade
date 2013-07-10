@@ -17,6 +17,49 @@ block content
           a(href='https://twitter.com/glenmaddern') @glenmaddern
           a(href='http://github.com/geelen') geelen
 
+    section(data-bespoke-state='trolling')
+      .content
+        .byline
+          .classy But first...
+        h1
+          strong Trolling!
+        .unbrokenline
+
+    section(data-bespoke-state='iframe')
+      .iframe-holster
+        h4 Angular rulez
+        iframe(src="http://www.google.com/trends/fetchComponent?hl=en-US&q=angularjs,+emberjs&date=1/2012+18m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=600")
+
+    section(data-bespoke-state='iframe')
+      .iframe-holster.no-animation
+        h4 Ok...
+        iframe(src="http://www.google.com/trends/fetchComponent?hl=en-US&q=angularjs,+emberjs,+jquery&date=1/2012+18m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=600")
+
+    section(data-bespoke-state='iframe')
+      .iframe-holster.no-animation
+        h4 ...maybe popularity...
+        iframe(src="http://www.google.com/trends/fetchComponent?hl=en-US&q=angularjs,+emberjs,+jquery,+php&date=1/2012+18m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=600")
+
+    section(data-bespoke-state='iframe')
+      .iframe-holster.no-animation
+        h4 ...isn't everything.
+        iframe(src="http://www.google.com/trends/fetchComponent?hl=en-US&q=angularjs,+emberjs,+jquery,+php,+justin+bieber&date=1/2012+18m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=600")
+
+    section(data-bespoke-state='japan')
+      .content
+        .byline
+          .classy Ok back to the talk:
+        h1
+          strong Assemble
+          | : Yeoman's missing piece
+        .byline
+          .classy with this guy:
+        .me
+        .byline
+          a(href='http://goodfil.ms') http://goodfil.ms
+          a(href='https://twitter.com/glenmaddern') @glenmaddern
+          a(href='http://github.com/geelen') geelen
+
     section(data-bespoke-state='underconstruction')
       .content
         .byline
@@ -53,18 +96,45 @@ block content
         h4 http://yeoman.io
         iframe(src='http://yeoman.io/')
 
+    section(data-bespoke-state='yeoman')
+      .content
+        .unbrokenline
+        h1
+          strong Yeoman
+          |  is designed
+        .byline
+          .classy for
+        h1 developers to
+          strong  be productive
+        .byline
+          .classy without
+        h1
+          strong understanding
+          |  its internals
+        .unbrokenline
+
+    section(data-bespoke-state='underconstruction')
+      .content
+        .byline
+          .classy But
+        h1 Yeoman is
+          strong  not there yet
+        .unbrokenline
+
     section(data-bespoke-state='')
       .content
         .byline
-          .classy Or,
-        h2 Bugs
+          .classy Hidden assumptions:
+        h2.strike Your CSS must be called main.{css,scss,sass}
         .byline
-          .classy that
-        h2
-          strong Strict mode fixes
+          .classy &
+        h2.strike Coffeescript output isn't minified/revved like JS
         .byline
-          .classy that I
-        h2 didn't know existed
+          .classy &
+        h2 Any HTML that isn't index.html isn't treated as code
+        .byline
+          .classy &
+        h2 No server-side templates/partials
         .unbrokenline
 
     section(data-bespoke-state='code')

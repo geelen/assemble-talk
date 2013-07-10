@@ -51,6 +51,12 @@ article
   &.serious::before
     +filter(grayscale(0.5) brightness(0.4 * $brightnessFactor))
     background-image: url('http://24.media.tumblr.com/tumblr_lhhjisnv1x1qe0eclo1_r10_500.gif')
+  &.trolling::before
+    width: 20%
+    height: 20%
+    +transform(scale(5.5))
+    +filter(blur(1px) grayscale(0.5) brightness(0.3 * $brightnessFactor))
+    background-image: url('http://images.wikia.com/nickfanon/images/f/f3/Troll_cat_gif_(1).gif')
 
   // use ::after for images (full size, cover)
   &.confession::after
@@ -58,6 +64,7 @@ article
   &.yeoman::after
     +filter(grayscale(0.6) contrast(0.9) brightness(0.3 * $brightnessFactor))
     background-image: url('http://yeoman.io/assets/img/yeoman-005.png')
+    background-position: 50% 40%
   &.programming::after
     +filter(none)
     background-size: contain

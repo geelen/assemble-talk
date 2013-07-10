@@ -146,7 +146,7 @@ section
     background-size: 100%
     background-position: 0 0
 
-  .iframe-holster
+  .iframe-holster, &.bespoke-inactive .iframe-holster.no-animation
     margin: 24px 48px 48px
     position: relative
     width: calc(66% - 96px)
@@ -158,6 +158,7 @@ section
     +transform(translateZ(-200px) scale(1.5) rotateY(10deg))
 
   iframe
+    background-color: white
     display: block
     position: absolute
     border: none
@@ -183,3 +184,6 @@ pre
   display: none
   &.bespoke-bullet-last-active
     display: block
+
+.strike
+  text-decoration: line-through
