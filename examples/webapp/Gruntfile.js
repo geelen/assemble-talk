@@ -15,6 +15,7 @@ var mountFolder = function (connect, dir) {
 module.exports = function (grunt) {
     // load all grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+    grunt.loadNpmTasks('assemble');
 
     // configurable paths
     var yeomanConfig = {
@@ -25,6 +26,10 @@ module.exports = function (grunt) {
     grunt.initConfig({
         yeoman: yeomanConfig,
         watch: {
+            assemble: {
+              files: ['<%= yeoman.app %>/{,*/}*.hbs','<%= yeoman.app %>/{,*/}*.json'],
+              tasks: ['assemble:dist']
+            },
             coffee: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
                 tasks: ['coffee:dist']
@@ -42,7 +47,7 @@ module.exports = function (grunt) {
                     livereload: LIVERELOAD_PORT
                 },
                 files: [
-                    '<%= yeoman.app %>/*.html',
+                    '{.tmp,<%= yeoman.app %>}/*.html',
                     '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -123,6 +128,19 @@ module.exports = function (grunt) {
                 }
             }
         },
+        assemble: {
+          options: {
+            data: '<%= yeoman.app %>/config.json'
+          },
+          dist: {
+            files: [{
+              expand: true,
+              cwd: '<%= yeoman.app %>',
+              src: '{,*/}*.hbs',
+              dest: '.tmp/'
+            }]
+          }
+        },
         coffee: {
             dist: {
                 files: [{
@@ -191,7 +209,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: '<%= yeoman.app %>/index.html'
+            html: ['.tmp/*.html']
         },
         usemin: {
             options: {
@@ -284,6 +302,7 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 'compass',
+                'assemble:dist',
                 'coffee:dist'
             ],
             test: [
@@ -322,6 +341,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'assemble:dist',
         'useminPrepare',
         'concurrent:dist',
         'concat',
