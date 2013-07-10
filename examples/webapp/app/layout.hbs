@@ -7,6 +7,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ config.title }}</title>
+
+        <meta name="breakpoint" content="two" media="(max-width: 511px)">
+        <meta name="breakpoint" content="four" media="(min-width: 512px) and (max-width: 767px)">
+        <meta name="breakpoint" content="six" media="(min-width: 768px) and (max-width: 1023px)">
+        <meta name="breakpoint" content="eight" media="(min-width: 1024px) and (max-width: 1279px)">
+        <meta name="breakpoint" content="ten" media="(min-width: 1280px)">
+        <!--[if gt IE 8]><!--><script>{{ glob 'app/bower_components/metaquery/metaquery.min.js' }}</script><!--<![endif]-->
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
